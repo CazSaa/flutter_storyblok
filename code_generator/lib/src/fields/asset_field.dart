@@ -24,6 +24,11 @@ base class AssetField extends BaseField {
   );
 
   @override
-  Expression buildInitializer(CodeExpression valueExpression) =>
-      initializerFromRequired(isRequired, valueExpression, type.nonNullable.invokeNamed("fromJson", valueExpression));
+  Expression buildInitializer(CodeExpression valueExpression) {
+    if (isRequired) return type.nonNullable.invokeNamed("fromJson", valueExpression);
+    return valueExpression
+        .equalTo(literalNull)
+        .or(valueExpression.index(literalString('filename')).equalTo(literalNull))
+        .conditional(literalNull, type.nonNullable.invokeNamed("fromJson", valueExpression));
+  }
 }

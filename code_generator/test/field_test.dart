@@ -689,7 +689,8 @@ void main() {
       );
       expect(
         field.buildInitializer(valueExpression.expression),
-        emitter.equalsCode("$valueExpression == null ? null : Asset.fromJson($valueExpression)"),
+        emitter.equalsCode(
+            "$valueExpression == null || $valueExpression [ 'filename' ] == null ? null : Asset.fromJson($valueExpression)"),
       );
     });
     test("Test required asset", () {
