@@ -1,3 +1,9 @@
+# v1.3.0
+
+- Fixed nullability of non-required `Asset` fields (#54).
+- Updated Dart SDK and dependency versions.
+- Bumped `flutter_storyblok` to ^1.4.0.
+
 # v1.2.0
 
 Added support for regions outside of EU

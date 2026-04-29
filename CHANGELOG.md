@@ -1,3 +1,7 @@
+# 1.4.0
+
+Updated Dart SDK and dependency versions.
+
 # 1.3.0
 
 Added support for regions outside of EU
