@@ -52,7 +52,7 @@ class ArticleOverviewPageScreen extends StatelessWidget {
                           color: AppColors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.black.withOpacity(0.1),
+                              color: AppColors.black.withValues(alpha: 0.1),
                               blurRadius: 8,
                               offset: const Offset(0, 4),
                             ),

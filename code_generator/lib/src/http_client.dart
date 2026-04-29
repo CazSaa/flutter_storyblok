@@ -117,8 +117,6 @@ extension RegionCodeGen on sb.Region {
         return "https://api-ca.storyblok.com";
       case sb.Region.cn:
         return "https://app.storyblokchina.cn";
-      default:
-        return "https://mapi.storyblok.com";
     }
   }
 

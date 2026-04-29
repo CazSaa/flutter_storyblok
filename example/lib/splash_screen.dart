@@ -11,13 +11,13 @@ class SplashScreen extends StatelessWidget {
   static final randomSeed = Random();
 
   static final _colors = [
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
-    AppColors.primary.withOpacity(.1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
+    AppColors.primary.withValues(alpha: .1),
   ];
 
   static final _durations = [

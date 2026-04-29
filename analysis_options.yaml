@@ -1,5 +1,9 @@
 include: package:lints/recommended.yaml
 
+formatter:
+  page_width: 120
+  trailing_commas: preserve
+
 analyzer:
   errors:
-    lines_longer_than_80_chars: ignore
+    avoid_print: false  # Uncomment to disable the `avoid_print` rule

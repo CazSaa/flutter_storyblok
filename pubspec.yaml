@@ -9,15 +9,15 @@ topics:
   - sdk
 
 environment:
-  sdk: ^3.3.0
+  sdk: ^3.8.0
 
 dependencies:
   flutter:
       sdk: flutter
-  http: ^1.2.2
-  collection: ^1.18.0
+  http: ^1.6.0
+  collection: ^1.19.1
 
 dev_dependencies:
-  lints: ^4.0.0
-  test: ^1.25.8
-  build_runner: ^2.4.13
+  lints: ^6.0.0
+  test: ^1.31.1
+  build_runner: ^2.14.1
